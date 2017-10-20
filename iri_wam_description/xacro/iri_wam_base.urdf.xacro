@@ -21,7 +21,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
-                <mesh filename="model://iri_wam_description/mesh/wambase.stl" scale="1.0 1.0 1.0" />
+                <mesh filename="package://iri_wam_description/mesh/wambase.stl" scale="1.0 1.0 1.0" />
             </geometry>
             <material name="Grey" >
                 <color rgba="0.75 0.75 0.75 1.0"/>
@@ -31,7 +31,7 @@
         <collision>
             <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="model://iri_wam_description/mesh/wambase_collision.stl" scale="1.0 1.0 1.0" />
+                <mesh filename="package://iri_wam_description/mesh/wambase_collision.stl" scale="1.0 1.0 1.0" />
             </geometry>
             <contact_coefficients kd="1.0" kp="1000.0" mu="0"/>
         </collision>
