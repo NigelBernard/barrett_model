@@ -16,7 +16,7 @@
         <visual>
             <origin xyz="0.0 0.0 0.0" rpy="0 0 0" />
             <geometry name="${prefix}_link_7_visual">
-                <mesh filename="model://iri_wam_description/mesh/wam7.stl" scale="1.0 1.0 1.0" />
+                <mesh filename="package://iri_wam_description/mesh/wam7.stl" scale="1.0 1.0 1.0" />
             </geometry>
             <material name="Grey" >
                 <color rgba="0.75 0.75 0.75 1.0"/>
@@ -25,7 +25,7 @@
         <collision>
             <origin xyz="0.0 0.0 0.0" rpy="0 0 0"/>
             <geometry name="${prefix}_link_7_collision">
-                <mesh filename="model://iri_wam_description/mesh/wam7_collision.stl" scale="1.0 1.0 1.0" />
+                <mesh filename="package://iri_wam_description/mesh/wam7_collision.stl" scale="1.0 1.0 1.0" />
 <!--                <box size="0.10 0.10 0.10"/> -->
             </geometry>
             <contact_coefficients kd="1.0" kp="1000.0" mu="0"/>

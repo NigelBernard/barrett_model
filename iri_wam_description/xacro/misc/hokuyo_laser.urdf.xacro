@@ -19,7 +19,7 @@
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <geometry>
-                <mesh filename="model://hokuyo/meshes/hokuyo.dae"/>
+                <mesh filename="package://hokuyo/meshes/hokuyo.dae"/>
             </geometry>
             <material name="Grey"/>
         </visual>
