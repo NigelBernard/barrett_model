@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-  <property name="M_PI" value="3.1415926535897931" />
+  <xacro:property name="M_PI" value="3.1415926535897931" />
 
   <xacro:macro name="wam4" params="prefix parent">
 
@@ -50,11 +50,11 @@
     <transmission name="tran_4">
       <type>transmission_interface/SimpleTransmission</type>
       <joint name="${prefix}_joint_4">
-        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
 
       </joint>
       <actuator name="motor_4">
-        <hardwareInterface>EffortJointInterface</hardwareInterface>
+        <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
       	<mechanicalReduction>50</mechanicalReduction>
         <motorTorqueConstant>1</motorTorqueConstant>
       <!-- <pulsesPerRevolution>90000</pulsesPerRevolution> -->

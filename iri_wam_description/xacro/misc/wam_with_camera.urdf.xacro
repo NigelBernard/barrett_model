@@ -6,20 +6,20 @@
        name="iri_wam">
   
   <!-- LINKS   -->  
-<!--  <include filename="$(find iri_wam_description)/xacro/wambase.urdf.xacro" />
+<!--  <xacro:include filename="$(find iri_wam_description)/xacro/wambase.urdf.xacro" />
 -->
-  <include filename="$(find iri_wam_description)/xacro/wam0.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wam1.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wam2.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wam3.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wam4.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wam5.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wam6.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wam7.urdf.xacro" />
-  <include filename="$(find iri_wam_description)/xacro/wamtcp.urdf.xacro" /> 
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam0.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam1.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam2.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam3.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam4.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam5.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam6.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam7.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wamtcp.urdf.xacro" /> 
 
   <!-- Forward facing camera -->
-  <include filename="$(find iri_wam_description)/xacro/misc/generic_camera.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/misc/generic_camera.urdf.xacro" />
 
 <!--
   <xacro:wambase>

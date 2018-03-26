@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro">
 
-  <property name="M_PI" value="3.1415926535897931" />
+  <xacro:property name="M_PI" value="3.1415926535897931" />
 
-  <property name="base_mass" value="20"/>
-  <property name="base_cg_x" value="0.0"/>
-  <property name="base_cg_y" value="0.0"/>
-  <property name="base_cg_z" value="0.0"/>
+  <xacro:property name="base_mass" value="20"/>
+  <xacro:property name="base_cg_x" value="0.0"/>
+  <xacro:property name="base_cg_y" value="0.0"/>
+  <xacro:property name="base_cg_z" value="0.0"/>
 
   <xacro:macro name="wambase" params="prefix">
     <link name="${prefix}_link_base">
