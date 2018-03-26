@@ -1,13 +1,13 @@
 <?xml version="1.0" ?>
 <robot xmlns:xacro="http://ros.org/wiki/xacro" >
 
-  <property name="M_PI" value="3.1415926535897931" />
-	<property name="cam_px" value="-0.1" />
-	<property name="cam_py" value="-0.0125" />
-	<property name="cam_pz" value=" 0.08" />
-	<property name="cam_or" value="0" />
-	<property name="cam_op" value="-${M_PI/2}" />
-	<property name="cam_oy" value="0" />
+  <xacro:property name="M_PI" value="3.1415926535897931" />
+	<xacro:property name="cam_px" value="-0.1" />
+	<xacro:property name="cam_py" value="-0.0125" />
+	<xacro:property name="cam_pz" value=" 0.08" />
+	<xacro:property name="cam_or" value="0" />
+	<xacro:property name="cam_op" value="-${M_PI/2}" />
+	<xacro:property name="cam_oy" value="0" />
 
   <xacro:macro name="kinect" params="prefix parent">
 
