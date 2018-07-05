@@ -4,14 +4,14 @@
        xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
        name="iri_wam">
 
-  <include filename="$(find iri_wam_description)/xacro/wam.urdf.xacro" />
+  <xacro:include filename="$(find iri_wam_description)/xacro/wam.urdf.xacro" />
 
   <gazebo>
 	<controller:gazebo_ros_controller_manager name="gazebo_ros_controller_manager" plugin="libgazebo_ros_controller_manager.so">
       <alwaysOn>true</alwaysOn>
       <updateRate>1000.0</updateRate>
       <robotParam>robot_description</robotParam>
-      <robotNamespace>/</robotNamespace>
+      <robotNamespace>/iri_wam</robotNamespace>
     </controller:gazebo_ros_controller_manager>
   </gazebo>
 
