@@ -8,9 +8,9 @@
   <arg default="false" name="headless" />
   <arg default="false" name="debug" />
 
-  
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(find iri_wam_gazebo)/worlds/iri_wam_no_balls.world" /> 
+    <arg name="world_name" value="$(find barrett_gazebo)/worlds/iri_wam_no_balls.world" />
     <arg name="debug" value="$(arg debug)" />
     <arg name="gui" value="$(arg gui)" />
     <arg name="paused" value="$(arg paused)" />
@@ -18,15 +18,16 @@
     <arg name="headless" value="$(arg headless)" />
   </include>
 
+  <!-- load the kinetic camera -->
   <node args="1.9 0.05 0.63 1.6 0.0 -2.2 /iri_wam_link_footprint /camera_depth_optical_frame 20" name="kinect_base_link" pkg="tf" type="static_transform_publisher" /> 
 
-  
+  <!-- Load the URDF into the ROS Parameter Server -->
   <param command="$(find xacro)/xacro.py '$(find iri_wam_description)/xacro/iri_wam.urdf.xacro'" name="robot_description" />
 
-  
+  <!-- Run a python script to the send a service call to gazebo_ros to spawn a URDF robot -->
   <node args="-urdf -model iri_wam -param robot_description -x -0.08 -y -0.09 -z 0.785" name="urdf_spawner" output="screen" pkg="gazebo_ros" respawn="false" type="spawn_model" />
 
-   
+  <!-- ros_control barrett launch file -->
   <include file="$(find iri_wam_gazebo)/launch/iri_wam_control.launch" />
 
 </launch>
